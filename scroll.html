@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-scroll.css">
+</head>
+<body>
+    <section>
+        <img src="assests/img/bg.jpg" id="bg">
+        <h2 id="text">Betancor</h2>
+        <img src="assests/img/man.png" id="man">
+        <img src="assests/img/clouds_1.png" id="clouds_1">
+        <img src="assests/img/clouds_2.png" id="clouds_2">
+        <img src="assests/img/mountain_left.png" id="mountain_left">
+        <img src="assests/img/mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>ScrolTrigger is Awesome</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius enim cumque eos aut, quas possimus iusto fugit eaque veniam necessitatibus quos minus accusantium. Illo nemo dolor officia, numquam aperiam sequi vitae corporis. Doloremque laborum pariatur consequatur qui nostrum, possimus obcaecati, nobis eveniet quia similique illo expedita rem quis praesentium ut fugit id odio sunt at in molestias quam excepturi? Omnis illo numquam debitis eius quam delectus odio enim minima. Dolorum rem voluptatem earum, voluptates ipsum incidunt eligendi soluta assumenda porro quia recusandae quo fugiat doloribus cupiditate id eius sint totam consequuntur aspernatur. A voluptatem nemo nulla velit minus amet ullam? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis perspiciatis consectetur? Sit vel quasi a blanditiis temporibus. Quam libero laboriosam mollitia deleniti, incidunt nulla vero. Quo similique eaque sequi quasi totam recusandae ipsum, ipsam animi quaerat voluptatibus eligendi natus quisquam neque amet id. Tempore, quas? Commodi maxime tenetur nobis veniam repudiandae, expedita earum placeat quas doloremque minus eveniet dolore incidunt, quis id tempore! Aperiam labore totam reiciendis cum saepe corporis temporibus id odio. Obcaecati tempora, quam odio vitae eveniet magnam perferendis optio labore ex molestiae consectetur impedit facere quod alias deleniti dignissimos unde maxime, atque distinctio nobis est explicabo! <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sequi, doloribus maiores quisquam velit eveniet incidunt optio nobis dolorum saepe ratione asperiores facere quas nulla doloremque est ducimus autem quidem sapiente explicabo non hic quam. Qui asperiores repellat ullam officiis soluta eligendi enim laborum velit sapiente molestiae tenetur aliquam impedit placeat harum assumenda, magni doloribus consequatur animi? Temporibus dolorem, saepe cum architecto cupiditate iure corrupti rem vero eaque, repellat itaque, adipisci at magnam quibusdam? Distinctio ad molestiae atque nemo quam quaerat consectetur nam, dignissimos dicta, voluptatibus fuga. Placeat nostrum, magni enim culpa sapiente dolores! Veritatis et architecto adipisci magni velit dolor odit voluptates ad ipsum officia repudiandae enim nostrum neque quisquam possimus obcaecati nobis quam perspiciatis voluptatum, voluptas ea nisi omnis debitis! Ea quia voluptatum alias accusamus exercitationem architecto voluptatibus ducimus nostrum animi incidunt maiores libero rerum laboriosam quod officiis quae suscipit magnam temporibus, cumque saepe perferendis cupiditate, quos nesciunt!</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+
+            gsap.to("#bg", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                scale: 1.5
+            });
+
+            gsap.to("#man", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                scale: 0.5
+            });
+
+            gsap.to("#mountain_left", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                x : -500,
+            });
+
+            gsap.to("#mountain_right", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                x : 500,
+            });
+
+            gsap.to("#clouds_1", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                x : 200,
+            });
+
+            gsap.to("#clouds_2", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                x : -200,
+            });
+
+            gsap.to("#text", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                y : 500,
+            });
+        
+    </script>
+</body>
+</html>
